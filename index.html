@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projetview – Suivi de projets</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' rx='3' fill='%233b5bdb'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a href="#/" class="brand">Projet<span>view</span></a>
+    <div class="topbar-actions">
+      <button class="btn ghost" data-action="export">Exporter</button>
+      <label class="btn ghost">Importer<input type="file" id="import-file" accept="application/json" hidden></label>
+      <button class="btn primary" data-action="new-project">+ Nouveau projet</button>
+    </div>
+  </header>
+  <main id="app"></main>
+  <dialog id="modal"></dialog>
+  <script src="app.js"></script>
+</body>
+</html>
